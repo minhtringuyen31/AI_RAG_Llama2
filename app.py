@@ -20,7 +20,7 @@ def load_llm():
     )
     return llm
 
-st.title("Chat with TechZone AI Assitant 🤖")
+st.title("Chat with AI Assistant 🤖")
 
 uploaded_file = st.sidebar.file_uploader("Upload your Data", type="csv")
 
@@ -51,7 +51,7 @@ if uploaded_file :
         st.session_state['history'] = []
 
     if 'generated' not in st.session_state:
-        st.session_state['generated'] = ["Hello ! Ask me anything about " + uploaded_file.name + " 🤗"]
+        st.session_state['generated'] = ["Hello ! I'm your AI Assistant. Let me support you 🤗"]
 
     if 'past' not in st.session_state:
         st.session_state['past'] = ["Hey ! 👋"]
@@ -76,8 +76,8 @@ if uploaded_file :
     if st.session_state['generated']:
         with response_container:
             for i in range(len(st.session_state['generated'])):
-                message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="big-smile")
-                message(st.session_state["generated"][i], key=str(i), avatar_style="thumbs")
+                message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="thumbs")
+                message(st.session_state["generated"][i], key=str(i), avatar_style="bottts")
 
 
 

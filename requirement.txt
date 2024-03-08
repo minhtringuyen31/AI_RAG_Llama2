@@ -1,9 +1,12 @@
 streamlit
+streamlit-chat
 pypdf
 langchain
+langchain-community
 torch
 accelerate
 bitsandbytes
 transformers
+ctransformers
 sentence-transformers
 faiss_cpu
