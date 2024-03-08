@@ -1,0 +1,9 @@
+streamlit
+pypdf
+langchain
+torch
+accelerate
+bitsandbytes
+transformers
+sentence-transformers
+faiss_cpu
